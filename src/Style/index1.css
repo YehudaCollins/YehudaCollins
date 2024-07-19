@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+ 
 body {
   font-family: 'Roboto', sans-serif;
   background: linear-gradient(135deg, #1f1c2c, #9687e3);
@@ -132,4 +132,3 @@ body {
 .home-description {
   color: #ccc;
 }
-
