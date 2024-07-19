@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.6.0",
     "autoprefixer": "^10.4.19",
     "emailjs-com": "^3.2.0",
     "framer-motion": "^5.0.0",
@@ -15,8 +16,8 @@
     "react-scripts": "5.0.0",
     "react-scroll": "^1.9.0",
     "react-tsparticles": "^2.12.2",
-    "tsparticles": "^3.5.0",
-    "tailwindcss": "^2.2.19"
+    "tailwindcss": "^2.2.19",
+    "tsparticles": "^3.5.0"
   },
   "scripts": {
     "start": "react-scripts start",
