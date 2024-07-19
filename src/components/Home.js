@@ -2,6 +2,7 @@ import React from 'react';
 import { gsap } from 'gsap';
 import '../Style/Home.css';
 import { FaGithub, FaEnvelope, FaInstagram, FaXing, FaDownload } from 'react-icons/fa';
+import { Link } from 'react-scroll';
 
 function Home() {
   React.useEffect(() => {
@@ -58,12 +59,9 @@ function Home() {
                 >
                   <FaDownload className="icon" /> Resume
                 </a>
-                <a
-                  href="#contact"
-                  className="button contact-button"
-                >
+                <Link to="contact" smooth={true} duration={1000} className="button contact-button">
                   Contact
-                </a>
+                </Link>
               </div>
             </div>
           </div>
