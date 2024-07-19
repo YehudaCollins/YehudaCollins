@@ -23,7 +23,7 @@ function Home() {
                 className="profile-image"
               />
               <div className="profile-name">
-                Yehudaggggg <span>Collins</span>
+                Yehudaggggg fff <span>Collins</span>
               </div> 
             </div>
             <div className="text-container">
