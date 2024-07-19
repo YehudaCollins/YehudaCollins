@@ -1,0 +1,94 @@
+body {
+  background-color: #1a202c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin-bottom: 5vh;
+  margin-top: -5vh;
+
+}
+
+.profile-card-1 {
+  background-color: #2d3748;
+  border-radius: 3%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* הגדלת עוצמת ה-shadow */
+  display: flex;
+  padding: 2rem;
+  width: 70%; /* הקטנת הרוחב של הקופסה */
+  position: relative;
+  
+}
+
+.text-container-1 {
+  width: 60%;
+}
+
+.image-container-1 {
+  width: 35%;
+  position: absolute;
+  top: 50%;
+  right: -10%;
+  transform: translateY(-50%);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* הגדלת עוצמת ה-shadow */
+  height: 300px; /* גובה התמונה */
+  width: 300px; /* רוחב התמונה */
+  border-radius: 8%;
+  overflow: hidden;
+}
+
+.profile-image-1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.title-1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  margin-bottom: 1rem;
+}
+
+.highlight-1 {
+  color: #38a169;
+}
+
+.description-1 {
+  font-size: 1rem;
+  color: #d7dbd1;
+  margin-bottom: 1rem;
+}
+
+.details-1 {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.detail-item-1 {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #d8dbd1;
+}
+
+.detail-title-1 {
+  font-weight: bold;
+  color: #328330;
+  margin-right: 0.5rem;
+}
+
+.icon-1 {
+  margin-right: 0.5rem;
+  color: #ffffff;
+}

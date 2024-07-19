@@ -1,0 +1,41 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1f2937;
+  padding: 0.3rem;
+  z-index: 10;
+  display: flex;
+  justify-content:right; /* פיזור אלמנטים אופקית */
+  align-items: center;
+  gap: 10vh;
+  border-bottom: 2px solid black; /* הוספת מסגרת תחתונה */
+}
+
+.navbar-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-right:70vh;
+}
+
+.nav-link {
+  color: #ffffff;
+  font-size: 1.125rem;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: color 0.3s;
+  margin-right: 10px;
+}
+
+.nav-link:hover {
+  color: #485eec;
+}
+
+.nav-icon {
+  font-size: 1.5rem; /* שינוי גודל האייקונים */
+  margin-right: 0.5rem;
+}

@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #1f1c2c, #9687e3);
+  overflow-x: hidden;
+}
+
+.bg-cover {
+  background-size: cover;
+  background-position: center;
+}
+
+.nav-link:hover {
+  color: #7C3AED;
+}
+
+.skill-card:hover {
+  transform: scale(1.05);
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.contact-form {
+  transition: transform 0.5s ease;
+}
+
+@keyframes gradient-animation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animated-shapes {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  overflow: hidden;
+}
+
+.shape {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  animation: move 20s infinite linear;
+}
+
+.shape:nth-child(1) {
+  width: 200px;
+  height: 200px;
+  top: 20%;
+  left: 10%;
+}
+
+.shape:nth-child(2) {
+  width: 300px;
+  height: 300px;
+  top: 60%;
+  left: 70%;
+}
+
+.shape:nth-child(3) {
+  width: 150px;
+  height: 150px;
+  top: 40%;
+  left: 40%;
+}
+
+.shape:nth-child(4) {
+  width: 150px;
+  height: 150px;
+  top: 80%;
+  left: 50%;
+}
+
+.shape:nth-child(5) {
+  width: 250px;
+  height: 250px;
+  top: 10%;
+  left: 80%;
+}
+
+.shape:nth-child(6) {
+  width: 200px;
+  height: 200px;
+  top: 30%;
+  left: 20%;
+}
+
+.shape:nth-child(7) {
+  width: 100px;
+  height: 100px;
+  top: 50%;
+  left: 60%;
+}
+
+.shape:nth-child(8) {
+  width: 300px;
+  height: 300px;
+  top: 70%;
+  left: 30%;
+}
+
+.shape:nth-child(9) {
+  width: 150px;
+  height: 150px;
+  top: 40%;
+  left: 90%;
+}
+
+.shape:nth-child(10) {
+  width: 200px;
+  height: 200px;
+  top: 80%;
+  left: 10%;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(100vw, -100vh);
+  }
+}
+
+.home-description {
+  color: #ccc;
+}
+

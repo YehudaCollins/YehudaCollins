@@ -1,0 +1,41 @@
+.skill-card {
+    perspective: 1000px;
+    height: 200px; /* הוספת גובה לכרטיסים */
+  }
+  
+  .skill-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .skill-card.flipped .skill-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .skill-card-front,
+  .skill-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 0.5rem;
+  }
+  
+  .skill-card-front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .skill-card-back {
+    background-color: #2d3748;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
