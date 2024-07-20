@@ -13,7 +13,7 @@ function Navbar() {
     <nav className="navbar">
       <div className="navbar-title">Full stack</div>
       <Link to="home" smooth={true} duration={1000} className="nav-link">
-        <FaHome className="nav-icon" /> Start
+        <FaHome className="nav-icon" /> About
       </Link>
       <Link to="skills" smooth={true} duration={1000} className="nav-link">
         <FaProjectDiagram className="nav-icon" /> Skills
