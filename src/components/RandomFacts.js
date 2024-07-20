@@ -3,11 +3,12 @@ import '../Style/randomFacts.css';
 
 const Skills = () => {
   const skills = [
-    { name: 'Tea drinking', percent: 95, color: 'linear-gradient(to top, #4CAF50, #A5D6A7)' },
-    { name: 'Design Systems', percent: 90, color: 'linear-gradient(to top, #FF9800, #FFCC80)' },
-    { name: 'Fullstack', percent: 95, color: 'linear-gradient(to top, #FFC107, #FFECB3)' },
-    { name: 'Peyton', percent: 75, color: 'linear-gradient(to top, #FFEB3B, #FFF9C4)' },
-    { name: 'sleep well', percent: 40, color: 'linear-gradient(to top, #F44336, #FFCDD2)' },
+    { name: 'Tea drinking', percent: 95, color: 'linear-gradient(45deg, #4CAF50, #388E3C, #2E7D32, #66BB6A, #A5D6A7)' },
+    { name: 'Game Develop', percent: 90, color: 'linear-gradient(45deg, #673AB7, #5E35B1, #512DA8, #9575CD, #D1C4E9)' },
+    { name: 'Design Systems', percent: 74, color: 'linear-gradient(45deg, #FF9800, #F57C00, #E65100, #FB8C00, #FFCC80)' },
+    { name: 'Fullstack', percent: 95, color: 'linear-gradient(45deg, #FFC107, #FFB300, #FFA000, #FFD54F, #FFECB3)' },
+    { name: 'Peyton', percent: 75, color: 'linear-gradient(45deg, #FFEB3B, #FBC02D, #F9A825, #FFF176, #FFF59D)' },
+    { name: 'sleep well', percent: 40, color: 'linear-gradient(45deg, #F44336, #E53935, #D32F2F, #EF5350, #FFCDD2)' },
   ];
 
   return (
@@ -21,7 +22,7 @@ const Skills = () => {
             <li className="skill-level">___ Geek</li>
             <li className="skill-level">___ Newbie</li>
           </ul>
-          <div className="meter-line"></div> {/* הפס החדש */}
+          <div className="meter-line"></div>
         </div>
         <div className="skills-wrapper">
           {skills.map((skill) => (
@@ -29,6 +30,7 @@ const Skills = () => {
               <div className="skill-bar-container">
                 <div className="skill-bar" style={{ height: `${skill.percent}%`, backgroundImage: skill.color }}>
                   <span className="skill-percent">{skill.percent}%</span>
+                  <div className="lightning-bolt"></div>
                 </div>
               </div>
               <p>{skill.name}</p>

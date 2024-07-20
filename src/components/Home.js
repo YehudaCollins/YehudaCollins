@@ -25,7 +25,7 @@ function Home() {
               />
               <div className="profile-name">
                 Yehuda <span>Collins</span>
-              </div> 
+              </div>
             </div>
             <div className="text-container">
               <p className="code-text">
