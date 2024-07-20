@@ -1,5 +1,5 @@
 .facts-section {
-    padding: 20px 0; /* הקטנת הפדינג */
+    padding: 20px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,8 +9,8 @@
     background-color: #1a202c;
     border-radius: 3%;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-    width: 60%; /* הקטנת הרוחב */
-    padding: 1rem; /* הקטנת הפדינג */
+    width: 60%;
+    padding: 1rem;
     margin: 0 5%;
     margin-right: -10%;
   }
@@ -22,8 +22,8 @@
   }
   
   .image-side {
-    width: 50%; /* הקטנת הרוחב */
-    padding: 10px; /* הקטנת הפדינג */
+    width: 50%;
+    padding: 10px;
   }
   
   .facts-image {
@@ -33,15 +33,15 @@
   }
   
   .text-side {
-    width: 45%; /* הקטנת הרוחב */
-    padding: 10px; /* הקטנת הפדינג */
+    width: 45%;
+    padding: 10px;
   }
   
   .section-title {
-    font-size: 1.5rem; /* הקטנת גודל הפונט */
+    font-size: 1.5rem;
     color: #ffffff;
-    margin-bottom: 5vh; /* הקטנת המרווח התחתון */
-    margin-left: 5vh; /* הקטנת המרווח השמאלי */
+    margin-bottom: 5vh;
+    margin-left: 5vh;
     text-align: left;
   }
   
@@ -52,8 +52,8 @@
   }
   
   .facts-list li {
-    font-size: 1rem; /* הקטנת גודל הפונט */
-    margin-bottom: 5px; /* הקטנת המרווח התחתון */
+    font-size: 1rem;
+    margin-bottom: 5px;
   }
   
   .facts-list a {
@@ -62,9 +62,9 @@
   
   .skills-section {
     background-color: #2d3748;
-    padding: 20px 0; /* הקטנת הפדינג */
+    padding: 20px 0;
     text-align: center;
-    margin-top: 10px; /* הקטנת המרווח העליון */
+    margin-top: 10px;
   }
   
   .skills-container {
@@ -77,19 +77,19 @@
     justify-content: space-around;
     align-items: flex-end;
     width: 70%;
-    height: 150px; /* הקטנת גובה */
+    height: 150px;
   }
   
   .skill {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 5px; /* הקטנת המרווח בין הכישורים */
+    margin: 0 5px;
   }
   
   .skill-bar-container {
-    width: 80px; /* הקטנת הרוחב */
-    height: 150px; /* הקטנת גובה */
+    width: 80px;
+    height: 150px;
     display: flex;
     align-items: flex-end;
   }
@@ -105,15 +105,15 @@
   
   .skill-percent {
     position: absolute;
-    bottom: 5px; /* הקטנת המרווח התחתון */
-    font-size: 1rem; /* הקטנת גודל הפונט */
+    bottom: 5px;
+    font-size: 1rem;
     font-weight: bold;
     color: white;
   }
   
   .skill p {
-    margin: 5px 0 2px; /* הקטנת המרווחים */
-    font-size: 0.75rem; /* הקטנת גודל הפונט */
+    margin: 5px 0 2px;
+    font-size: 0.75rem;
     color: #e1d8d8;
   }
   
@@ -122,27 +122,27 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    height: 150px; /* הקטנת גובה */
-    padding: 10px; /* הקטנת הפדינג */
-    margin-right: 10px; /* הקטנת המרווח הימני */
+    height: 150px;
+    padding: 10px;
+    margin-right: 10px;
     position: relative;
   }
   
   .skill-level {
-    font-size: 0.75rem; /* הקטנת גודל הפונט */
+    font-size: 0.75rem;
     color: #e1d8d8;
     text-align: left;
-    margin-bottom: 2.5vh; /* הקטנת המרווח התחתון */
+    margin-bottom: 2.5vh;
   }
   
   .skills-list {
-    margin-top: -3.5vh; /* הקטנת המרווח העליון */
+    margin-top: -3.5vh;
   }
   
   .meter-line {
     position: absolute;
-    left: 10px; /* הקטנת המרווח השמאלי */
-    top: -4vh; /* הקטנת המרווח העליון */
+    left: 10px;
+    top: -4vh;
     width: 2px;
     height: 130%;
     background-color: #e1d8d8;

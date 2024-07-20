@@ -1,128 +1,125 @@
+.profile-card {
+  position: relative;
+  background-color: #2d3748;
+  border-radius: 3%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  display: flex;
+  height: 75vh;
+  width: 90%;
+  padding: 2rem;
+  margin-left: -2%;
+}
 
-  .profile-card {
-    position: relative;
-    background-color: #2d3748;
-    border-radius: 3%;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* הגדלת עוצמת ה-shadow */
-    display: flex;
-    height: 75vh;
-    width: 90%;
-    padding: 2rem;
-    margin-left: -2%;
-  }
-  
-  .image-container {
-    position: relative;
-    width: 50%;
-  }
-  
-  .profile-image {
-    margin-top: 2rem;
-    height: 90%;
-    width: 100%;
-    object-fit: cover;
-    border-top-right-radius: 6%;
-    border-bottom-right-radius: 6%;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* הגדלת עוצמת ה-shadow */
-  }
-  
-  .profile-name {
-    position: absolute;
-    top: -2rem;
-    left: 1rem;
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #ffffff;
-  }
-  
-  .profile-name span {
-    color: #a0aec0;
-  }
-  
-  .text-container {
-    position: relative;
-    width: 60%;
-    height: 50vh;
-    background-color: #1a202c;
-    padding: 2rem;
-    color: #d1d5db;
-    border-radius: 8%;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* הגדלת עוצמת ה-shadow */
-    margin-left: -3rem;
-    margin-top: 3rem;
-    
-  }
-  
-  .code-text {
-    font-size: 1.125rem;
-    margin-bottom: 1rem;
-  }
-  
-  .code-text span {
-    color: #48bb78;
-  }
-  
-  .icons-container {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1.5rem;
-  }
-  
-  .profile-name-inline {
-    font-size: 1.25rem;
-    font-weight: bold;
-    color: #ffffff;
-    margin-right: 1rem;
-  }
-  
-  .icon-link {
-    color: #a0aec0;
-    font-size:x-large;
-    margin-right: 1rem;
-  }
-  
-  .profile-description {
-    margin-bottom: 1.5rem;
-  }
-  
-  .profile-description .bold {
-    font-weight: bold;
-    color: #ffffff;
-  }
-  
-  .button-container {
-    display: flex;
-    gap: 1rem;
-  }
-  
-  .button {
-    padding: 0.5rem 1rem;
-    border-radius: 0.25rem;
-    display: flex;
-    align-items: center;
-    transition: background-color 0.3s;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  }
-  
-  .resume-button {
-    background-color: #38a169;
-    color: #ffffff;
-  }
-  
-  .resume-button:hover {
-    background-color: #2f855a;
-  }
-  
-  .contact-button {
-    border: 1px solid #4a5568;
-    color: #ffffff;
-  }
-  
-  .contact-button:hover {
-    background-color: #4a5568;
-  }
-  
-  .icon {
-    margin-right: 0.5rem;
-  }
-  
+.image-container {
+  position: relative;
+  width: 50%;
+}
+
+.profile-image {
+  margin-top: 2rem;
+  height: 90%;
+  width: 100%;
+  object-fit: cover;
+  border-top-right-radius: 6%;
+  border-bottom-right-radius: 6%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.profile-name {
+  position: absolute;
+  top: -2rem;
+  left: 1rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.profile-name span {
+  color: #a0aec0;
+}
+
+.text-container {
+  position: relative;
+  width: 60%;
+  height: 50vh;
+  background-color: #1a202c;
+  padding: 2rem;
+  color: #d1d5db;
+  border-radius: 8%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  margin-left: -3rem;
+  margin-top: 3rem;
+}
+
+.code-text {
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+}
+
+.code-text span {
+  color: #48bb78;
+}
+
+.icons-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.profile-name-inline {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-right: 1rem;
+}
+
+.icon-link {
+  color: #a0aec0;
+  font-size: x-large;
+  margin-right: 1rem;
+}
+
+.profile-description {
+  margin-bottom: 1.5rem;
+}
+
+.profile-description .bold {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.button-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.resume-button {
+  background-color: #38a169;
+  color: #ffffff;
+}
+
+.resume-button:hover {
+  background-color: #2f855a;
+}
+
+.contact-button {
+  border: 1px solid #4a5568;
+  color: #ffffff;
+}
+
+.contact-button:hover {
+  background-color: #4a5568;
+}
+
+.icon {
+  margin-right: 0.5rem;
+}

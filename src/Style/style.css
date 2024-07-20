@@ -19,3 +19,57 @@ body {
   background-color: #000000;
 }
 
+/* Media Queries for smaller screens */
+@media (max-width: 768px) {
+  .facts-section {
+    padding: 10px 0;
+  }
+  
+  .facts-card {
+    width: 90%;
+    margin: 0 5%;
+    margin-right: 0;
+  }
+  
+  .content-wrapper {
+    flex-direction: column;
+  }
+  
+  .image-side,
+  .text-side {
+    width: 100%;
+    padding: 5px;
+  }
+  
+  .section-title {
+    font-size: 1.25rem;
+    margin-bottom: 3vh;
+    margin-left: 2vh;
+  }
+  
+  .facts-list li {
+    font-size: 0.875rem;
+  }
+  
+  .skills-wrapper {
+    flex-direction: column;
+    height: auto;
+  }
+  
+  .skill {
+    margin: 10px 0;
+  }
+  
+  .skill-bar-container {
+    width: 90%;
+    height: 100px;
+  }
+  
+  .skill-percent {
+    font-size: 0.875rem;
+  }
+  
+  .skill p {
+    font-size: 0.75rem;
+  }
+}
