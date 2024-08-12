@@ -2,7 +2,7 @@ import React from 'react';
 import { FaMapMarkerAlt, FaCalendarAlt, FaFlag, FaGraduationCap, FaIndustry, FaStar } from 'react-icons/fa';
 import '../Style/About.css';
 
-const About = () => {
+const About = () => {  
   return (
     <div className="container-1">
       <div className="profile-card-1">
