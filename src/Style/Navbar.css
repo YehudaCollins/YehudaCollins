@@ -1,23 +1,22 @@
+/* עיצוב כללי של ה-Navbar */
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   background-color: #1f2937;
-  padding: 0.3rem;
+  padding: 0.5rem 5%;
   z-index: 10;
   display: flex;
-  justify-content:right; /* פיזור אלמנטים אופקית */
+  justify-content: space-between;
   align-items: center;
-  gap: 10vh;
-  border-bottom: 2px solid black; /* הוספת מסגרת תחתונה */
+  border-bottom: 2px solid black;
 }
 
 .navbar-title {
   font-size: 2rem;
   font-weight: bold;
   color: #ffffff;
-  margin-right:70vh;
 }
 
 .nav-link {
@@ -25,10 +24,9 @@
   font-size: 1.125rem;
   text-align: center;
   display: flex;
-  flex-direction: row;
   align-items: center;
   transition: color 0.3s;
-  margin-right: 10px;
+  margin: 0 15px;
 }
 
 .nav-link:hover {
@@ -36,6 +34,114 @@
 }
 
 .nav-icon {
-  font-size: 1.5rem; /* שינוי גודל האייקונים */
+  font-size: 1.5rem;
   margin-right: 0.5rem;
+}
+
+.hamburger-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+/* עיצוב למובייל */
+@media (max-width: 768px) {
+  .navbar {
+    justify-content: flex-start;
+    padding-left: 10px; /* לוודא שהכותרת תישאר בצד שמאל */
+  }
+
+  .navbar-title {
+    font-size: 1.5rem; /* הקטנת הכותרת */
+    margin-left: -80%; /* להסיר מרווח נוסף */
+  }
+
+  .hamburger-icon {
+    display: block;
+    z-index: 1100;
+    margin-left: auto;
+  }
+
+  .nav-links-container {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0.5rem;
+    right: -260px;
+    background-color: #133255; /* צבע יותר מדהים */
+    width: 170px; /* מלבן קטן יותר */
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.3);
+    transition: right 0.5s ease;
+    z-index: 1000;
+  }
+
+  .nav-links-container.open {
+    right: 1rem;
+  }
+
+  .nav-link {
+    margin: 0.75rem 0;
+    font-size: 1rem;
+    justify-content: center; /* הלינקים יהיו במרכז */
+  }
+
+  .nav-icon {
+    font-size: 1.3rem;
+    margin-right: 0.5rem;
+  }
+
+  .hamburger-icon.open {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: #ffffff;
+  }
+
+  .hamburger-icon.close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: #ffffff;
+  }
+}
+
+/* עיצוב למחשב עם אנימציה */
+@media (min-width: 769px) {
+  .nav-links-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* שחזור אנימציית כניסה לינק אחרי לינק */
+  .nav-link {
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: slideIn 0.5s ease-out forwards;
+  }
+
+  .nav-link:nth-child(1) {
+    animation-delay: 0.2s;
+  }
+
+  .nav-link:nth-child(2) {
+    animation-delay: 0.4s;
+  }
+
+  .nav-link:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+
+  .nav-link:nth-child(4) {
+    animation-delay: 0.8s;
+  }
+
+  @keyframes slideIn {
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
 }

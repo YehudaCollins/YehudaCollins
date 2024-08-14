@@ -1,3 +1,4 @@
+/* עיצוב כללי */
 .contact-section {
   background-color: #1a202c;
   color: #d1d5db;
@@ -64,6 +65,7 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
+
 }
 
 .form-input, .form-textarea {
@@ -73,6 +75,7 @@
   border: 1px solid #2d3748;
   background-color: #2d3748;
   color: #d1d5db;
+
 }
 
 .form-textarea {
@@ -89,19 +92,18 @@
   font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s;
+
 }
 
 .send-button:hover {
   background-color: #2f855a;
 }
 
-
 .pppp{
   display: flex;
   flex-direction: column;
   width: 50%;
 }
-
 
 .map-container {
   margin-bottom: 1.5rem;
@@ -111,4 +113,45 @@
   width: 100%;
   border-radius: 0.5rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* התאמות למובייל */
+@media (max-width: 768px) {
+  .contact-section {
+    width: 95%;
+    padding: 1rem;
+  }
+
+  .contact-content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .contact-text {
+    margin-right: 0;
+  }
+
+  .contact-details {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 1rem;
+  }
+
+  .pppp {
+    width: 100%;
+  }
+
+  .contact-title {
+    font-size: 1.75rem;
+    text-align: center;
+  }
+
+  .contact-description {
+    font-size: 0.875rem;
+    text-align: center;
+  }
+
+  .contact-form {
+    width: 130%;
+  }
 }

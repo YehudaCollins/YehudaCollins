@@ -6,7 +6,6 @@
   align-items: center;
 }
 
-
 .stats-section h2 {
   font-size: 2.5rem;
   font-weight: bold;
@@ -51,4 +50,26 @@
 .stat-card p {
   font-size: 2rem;
   color: white;
+}
+
+/* עיצוב מותאם למובייל */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr); /* שני כרטיסים בכל שורה */
+    gap: 1rem; /* רווח בין הכרטיסים */
+  }
+
+  .stat-card {
+    width: 40vw; /* התאמת הרוחב של הכרטיסים ל-40% מרוחב המסך */
+    padding: 15px; /* הקטנת הפדינג לכרטיסים */
+    margin: 0 auto; /* מרווח בצדדים */
+  }
+
+  .stat-card h3 {
+    font-size: 1.5rem; /* התאמת גודל הכותרת */
+  }
+
+  .stat-card p {
+    font-size: 1.75rem; /* התאמת גודל המספרים */
+  }
 }

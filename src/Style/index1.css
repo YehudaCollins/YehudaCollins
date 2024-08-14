@@ -132,3 +132,50 @@ body {
 .home-description {
   color: #ccc;
 }
+
+/* index1.css */
+
+/* התאמה לתצוגות קטנות - טלפונים ניידים */
+@media (max-width: 768px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+
+  .shape {
+    width: 100px; /* גודל קטן יותר לצורות */
+    height: 100px;
+  }
+
+  /* התאמות ספציפיות לצורות */
+  .shape:nth-child(1),
+  .shape:nth-child(3),
+  .shape:nth-child(5) {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .home-description {
+    font-size: 14px; /* גודל טקסט קטן יותר */
+  }
+}
+
+/* התאמה לתצוגות בינוניות - טאבלטים */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .content {
+    padding: 0 2rem;
+  }
+
+  .shape {
+    width: 150px; /* גודל בינוני לצורות */
+    height: 150px;
+  }
+}

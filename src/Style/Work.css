@@ -5,7 +5,7 @@
 }
 
 .work-title {
-  font-size: 3.5rem;
+  font-size: 3.5rem; /* שמירת גודל הכותרת במחשב */
   font-weight: bold;
   text-align: center;
   color: #c5e4c1;
@@ -30,7 +30,7 @@
   background-color: #3b4735;
   padding: 1.5rem;
   border-radius: 0.5rem;
-  box-shadow: 0 16px 32px rgb(0, 0, 0);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.8);
   transition: transform 0.3s ease;
 }
 
@@ -109,4 +109,56 @@
 
 .project-button-enter:hover {
   background-color: #059669;
+}
+
+/* עיצוב מותאם למובייל */
+@media (max-width: 768px) {
+  .work-title {
+    font-size: 2rem; /* שמירה על גודל הכותרת במובייל */
+    margin-bottom: 1rem;
+  }
+
+  .work-container {
+    grid-template-columns: 1fr; /* כרטיס אחד בכל שורה */
+    gap: 1rem; /* הפחתת המרווח בין הכרטיסות */
+    padding: 0 1rem; /* רווח בצדדים */
+  }
+
+  .project-card {
+    padding: 1rem; /* הקטנת מרווח הכרטיס */
+    margin: 0 0.5rem; /* רווח בצדדים */
+  }
+
+  .project-image {
+    height: 12rem; /* הקטנת גובה התמונה */
+    margin-bottom: 0.5rem;
+  }
+
+  .project-title {
+    font-size: 1.25rem; /* הקטנת גודל הכותרת בכרטיס */
+    margin-bottom: 0.5rem;
+  }
+
+  .project-description {
+    font-size: 0.875rem; /* הקטנת גודל הטקסט */
+    margin-bottom: 0.5rem;
+  }
+
+  .project-technology {
+    font-size: 0.75rem; /* הקטנת גודל הטכנולוגיות */
+    padding: 0.2rem 0.5rem;
+  }
+
+  .project-buttons {
+    gap: 0.5rem; /* הפחתת המרווח בין הכפתורים */
+  }
+
+  .project-button {
+    font-size: 0.875rem; /* הקטנת גודל הכפתורים */
+    padding: 0.4rem 0.75rem;
+  }
+
+  .project-button .button-icon {
+    margin-right: 0.4rem;
+  }
 }

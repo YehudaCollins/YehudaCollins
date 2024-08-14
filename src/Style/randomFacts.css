@@ -189,3 +189,148 @@
     background-color: #e1d8d8;
   }
   
+ /* עיצוב מותאם למובייל */
+@media (max-width: 768px) {
+  .facts-section {
+    padding: 10px 0;
+    display: block;
+    text-align: center;
+  }
+
+  .facts-card {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* הפחתת הצל */
+    border-radius: 5%;
+  }
+
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-side {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .facts-image {
+    width: 100%;
+    border-radius: 10px;
+    height: auto;
+  }
+
+  .text-side {
+    width: 100%;
+    padding: 10px 0;
+    text-align: left; /* מיושרים לשמאל */
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 10vh;
+  }
+
+  .facts-list {
+    padding: 0;
+    list-style: none;
+    color: #e1d8d8;
+    text-align: left; /* מיושרים לשמאל */
+  }
+
+  .facts-list li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+  .skills-section {
+    background-color: #2d3748;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .skills-container {
+    display: flex;
+    width: 100%;
+    justify-content: center; /* ממקם את הסקילים באמצע */
+  }
+
+  .skills-meter {
+    width: 60%; /* הקטנת הרוחב של הסקילים */
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 10%;
+    height: 100%; /* התאמה לגובה הפס */
+  }
+
+  .skills-wrapper {
+    width: 60%; /* הקטנת הרוחב של הסקילים */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    transform: rotate(-90deg); /* סיבוב רק של הגרפים */
+    margin-left: 10%;
+  }
+  
+  .skill {
+    margin: 0 1px; /* רווח קטן בין כל בר */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skill-bar-container {
+    height: 90px; /* הקטנת גובה הסקילים */
+    width: 30px; /* הקטנת רוחב הסקילים */
+  }
+
+  .skill-bar {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-size: 400% 400%;
+    animation: gradient-animation 2s ease infinite;
+    margin-left: -150%;
+    margin-bottom:3vh;
+  }
+
+  .skill-percent {
+    font-size: 0.65rem; /* הקטנת הטקסט */
+    font-weight: bold;
+    transform: rotate(90deg); /* החזרת האחוזים למצב רגיל */
+  }
+
+  .skill p {
+    font-size: 0.65rem; /* הקטנת הטקסט */
+    margin: 5px 0;
+    font-weight: bold;
+    transform: rotate(90deg); /* החזרת שמות הסקילים למצב רגיל */
+    position: relative;
+    right: 110%; /* התאמה למיקום מול כל גרף */
+    top: 200%; /* התאמה לגובה הגרף */
+    margin-top: 50%;
+  }
+
+  .meter-line {
+    display: block; /* הצגת קו המדד */
+    width: 2px;
+    height: 125%; /* התאמת הקו לגובה החדש */
+    margin-bottom: 10%;
+    margin-left: -10%;
+  }
+
+  .skill-level {
+    font-size: 0.75rem;
+    text-align: left;
+  }
+}
