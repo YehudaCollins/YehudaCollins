@@ -5,12 +5,12 @@ import '../Style/Work.css'; // ייבוא קובץ ה-CSS
 function Work() {
   const projects = [
     {
-      title: 'Gourmet-Galaxy',
-      description: 'Shop site. which allows you to add stores and get details and prices for each store.',
-      image: 'gourmet-galaxy.png',
-      link: 'https://github.com/YehudaCollins/GourmetGalaxy',
-      link2: 'https://gourmet-galaxy.netlify.app/',
-      technologies: ['JavaScript', 'HTML', 'CSS', 'React', 'Node.js', 'MongoDB']
+      title: 'Jerusalem Reale State',
+      description: 'A real estate site for buying houses',
+      image: 'cinawave.png',
+      link: 'https://jerusalemrealestate.us/',
+      link2: '',
+      technologies: ['JavaScript', 'emailjs', 'CSS', 'React', 'Node.js', 'PostgreSQL','api','Google Maps']
     },
     {
       title: 'Briniac',
@@ -27,6 +27,14 @@ function Work() {
       link: 'https://github.com/YehudaCollins/cinawave',
       link2: 'https://cinawave.com/',
       technologies: ['JavaScript', 'HTML', 'CSS', 'React', 'Node.js', 'PostgreSQL','api','tmdb']
+    },
+    {
+      title: 'Gourmet-Galaxy',
+      description: 'Shop site. which allows you to add stores and get details and prices for each store.',
+      image: 'gourmet-galaxy.png',
+      link: 'https://github.com/YehudaCollins/GourmetGalaxy',
+      link2: 'https://gourmet-galaxy.netlify.app/',
+      technologies: ['JavaScript', 'HTML', 'CSS', 'React', 'Node.js', 'MongoDB']
     },
     {
       title: 'Zombieland',

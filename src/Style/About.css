@@ -14,18 +14,16 @@ body {
   width: 90%;
   margin-bottom: 5vh;
   margin-top: -5vh;
-
 }
 
 .profile-card-1 {
   background-color: #2d3748;
   border-radius: 3%;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* הגדלת עוצמת ה-shadow */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
   display: flex;
   padding: 2rem;
-  width: 70%; /* הקטנת הרוחב של הקופסה */
+  width: 70%;
   position: relative;
-  
 }
 
 .text-container-1 {
@@ -38,9 +36,9 @@ body {
   top: 50%;
   right: -10%;
   transform: translateY(-50%);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* הגדלת עוצמת ה-shadow */
-  height: 300px; /* גובה התמונה */
-  width: 300px; /* רוחב התמונה */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  height: 300px;
+  width: 300px;
   border-radius: 8%;
   overflow: hidden;
 }
@@ -93,7 +91,6 @@ body {
   color: #ffffff;
 }
 
-
 /* עיצוב מותאם למובייל */
 @media (max-width: 768px) {
   body {
@@ -115,8 +112,8 @@ body {
     margin-top: 55%;
     width: 100%;
     padding: 1rem;
-    background-color:#202431 ;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* הפחתת הצל כדי להתאים למובייל */
+    background-color: #202431;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 5%;
   }
 
@@ -128,7 +125,7 @@ body {
     margin-top: 10%;
     right: 0;
     transform: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* התאמת הצל */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 50%;
     overflow: hidden;
   }
@@ -151,17 +148,17 @@ body {
   .description-1 {
     font-size: 0.9rem;
     margin-bottom: 1rem;
-    text-align: left; /* מיושר לשמאל */
+    text-align: left;
   }
 
   .details-1 {
     grid-template-columns: 1fr;
     gap: 0.5rem;
-    text-align: left; /* מיושר לשמאל */
+    text-align: left;
   }
 
   .detail-item-1 {
-    justify-content: flex-start; /* התחל מצד שמאל */
+    justify-content: flex-start;
     font-size: 0.9rem;
   }
 
