@@ -39,7 +39,7 @@ function Work() {
     {
       title: 'Gourmet-Galaxy',
       description: 'Shop site. which allows you to add stores and get details and prices for each store.',
-      images: ['gourmet-galaxy.png', 'gourmet2.png', 'gourmet3.png'], // Multiple images
+      images: ['gourmet-galaxy.png', 'r2.png', 'r3.png'], // Multiple images
       link: 'https://github.com/YehudaCollins/GourmetGalaxy',
       link2: 'https://gourmet-galaxy.netlify.app/',
       technologies: ['JavaScript', 'HTML', 'CSS', 'React', 'Node.js', 'MongoDB']
