@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaBars, FaTimes, FaHome, FaProjectDiagram, FaUser, FaEnvelope } from 'react-icons/fa';
+import { FaBars, FaTimes } from 'react-icons/fa';
 import { Link } from 'react-scroll';
 import '../Style/Navbar.css';
 
@@ -16,16 +16,16 @@ function Navbar() {
 
       <div className={`nav-links-container ${isMenuOpen ? 'open' : ''}`}>
         <Link to="home" smooth={true} duration={1000} className="nav-link" onClick={toggleMenu}>
-          <FaHome className="nav-icon" /> Home
+          Home
         </Link>
         <Link to="skills" smooth={true} duration={1000} className="nav-link" onClick={toggleMenu}>
-          <FaProjectDiagram className="nav-icon" /> Skills
+          Skills
         </Link>
         <Link to="work" smooth={true} duration={1000} className="nav-link" onClick={toggleMenu}>
-          <FaUser className="nav-icon" /> Work
+          Work
         </Link>
         <Link to="contact" smooth={true} duration={1000} className="nav-link" onClick={toggleMenu}>
-          <FaEnvelope className="nav-icon" /> Contact
+          Contact
         </Link>
       </div>
 

@@ -1,6 +1,7 @@
 /* Global settings for mobile first approach */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  background-color: #000000;
 }
 
 .container {
@@ -10,19 +11,22 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
   margin: 10px 0;
+  color: #D4AF37;
 }
 
 p {
   line-height: 1.6;
+  color: #E0E0E0;
 }
 
 /* Profile Card */
 .profile-card {
   position: relative;
-  background-color: #2d3748;
-  border-radius: 3%;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  background-color: #787171;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
   height: auto;
@@ -39,9 +43,8 @@ p {
 .profile-image {
   width: 100%;
   object-fit: cover;
-  border-top-right-radius: 6%;
-  border-bottom-right-radius: 6%;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 .profile-name {
@@ -50,32 +53,34 @@ p {
   left: 1rem;
   font-size: 2rem;
   font-weight: bold;
-  color: #ffffff;
+  color: #D4AF37;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
 .profile-name span {
-  color: #a0aec0;
+  color: #FFFFFF;
 }
 
 .text-container {
   position: relative;
   width: 100%;
   height: 70%;
-  background-color: #1a202c;
+  background-color: #423939;
   padding: 2rem;
-  color: #d1d5db;
-  border-radius: 8%;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  color: #E0E0E0;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
   margin-top: 3rem;
 }
 
 .code-text {
   font-size: 1rem;
   margin-bottom: 1rem;
+  color: #D4AF37;
 }
 
 .code-text span {
-  color: #48bb78;
+  color: #FFFFFF;
 }
 
 .icons-container {
@@ -88,14 +93,19 @@ p {
 .profile-name-inline {
   font-size: 1.25rem;
   font-weight: bold;
-  color: #ffffff;
+  color: #D4AF37;
   margin-right: 1rem;
 }
 
 .icon-link {
-  color: #a0aec0;
+  color: #E0E0E0;
   font-size: x-large;
   margin-right: 1rem;
+  transition: color 0.3s ease;
+}
+
+.icon-link:hover {
+  color: #D4AF37;
 }
 
 .profile-description {
@@ -104,7 +114,7 @@ p {
 
 .profile-description .bold {
   font-weight: bold;
-  color: #ffffff;
+  color: #D4AF37;
 }
 
 .button-container {
@@ -116,29 +126,32 @@ p {
 
 .button {
   padding: 0.5rem 1rem;
-  border-radius: 0.25rem;
+  border-radius: 5px;
   display: flex;
   align-items: center;
-  transition: background-color 0.3s;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .resume-button {
-  background-color: #38a169;
-  color: #ffffff;
+  background-color: #D4AF37;
+  color: #000000;
 }
 
 .resume-button:hover {
-  background-color: #2f855a;
+  background-color: #000000;
+  color: #D4AF37;
 }
 
 .contact-button {
-  border: 1px solid #4a5568;
-  color: #ffffff;
+  border: 2px solid #D4AF37;
+  color: #D4AF37;
+  background-color: transparent;
 }
 
 .contact-button:hover {
-  background-color: #4a5568;
+  background-color: #D4AF37;
+  color: #000000;
 }
 
 .icon {
@@ -188,7 +201,7 @@ p {
 /* עיצוב מותאם למובייל עם צבעים מעודכנים */
 @media (max-width: 768px) {
   body {
-    background-color: #0f172a;
+    background-color: #000000;
   }
 
   .profile-name {
@@ -197,12 +210,13 @@ p {
     margin-top: 10px;
     text-align: center;
     font-weight: bold;
-    color: #f8fafc;
+    color: #D4AF37;
     margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
   }
 
   .profile-name span {
-    color: #22c55e;
+    color: #FFFFFF;
   }
 
   .profile-card {
@@ -212,9 +226,9 @@ p {
     width: 100%;
     max-width: 350px;
     margin: 0 auto;
-    background-color: #1e293b;
+    background-color: #787171;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
     margin-top: 70%;
   }
 
@@ -232,13 +246,13 @@ p {
     object-fit: cover;
     object-position: top;
     max-width: 100%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
   }
 
   .text-container {
     text-align: center;
-    color: #e2e8f0;
-    background-color: #334155;
-
+    color: #E0E0E0;
+    background-color: #423939;
   }
 
   .icons-container {
@@ -249,14 +263,19 @@ p {
   }
 
   .icon-link {
-    color: #94a3b8;
+    color: #E0E0E0;
     font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+
+  .icon-link:hover {
+    color: #D4AF37;
   }
 
   .profile-description {
     font-size: 0.875rem;
     margin-bottom: 15px;
-    color: #cbd5e1;
+    color: #E0E0E0;
   }
 
   .button-container {
@@ -271,16 +290,27 @@ p {
     border-radius: 5px;
     display: flex;
     align-items: center;
+    transition: all 0.3s ease;
   }
 
   .resume-button {
-    background-color: #22c55e;
-    color: #ffffff;
+    background-color: #D4AF37;
+    color: #000000;
+  }
+
+  .resume-button:hover {
+    background-color: #000000;
+    color: #D4AF37;
   }
 
   .contact-button {
-    border: 1px solid #64748b;
-    color: #ffffff;
+    border: 2px solid #D4AF37;
+    color: #D4AF37;
     background-color: transparent;
+  }
+
+  .contact-button:hover {
+    background-color: #D4AF37;
+    color: #000000;
   }
 }

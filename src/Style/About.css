@@ -1,10 +1,11 @@
 body {
-  background-color: #1a202c;
+  background-color: #000000;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   margin: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 .container-1 {
@@ -17,9 +18,9 @@ body {
 }
 
 .profile-card-1 {
-  background-color: #2d3748;
-  border-radius: 3%;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  background-color: #333333;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
   display: flex;
   padding: 2rem;
   width: 70%;
@@ -36,10 +37,10 @@ body {
   top: 50%;
   right: -10%;
   transform: translateY(-50%);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
   height: 300px;
   width: 300px;
-  border-radius: 8%;
+  border-radius: 10px;
   overflow: hidden;
 }
 
@@ -50,19 +51,20 @@ body {
 }
 
 .title-1 {
+  font-family: 'Playfair Display', serif;
   font-size: 2.5rem;
   font-weight: bold;
-  color: rgb(255, 255, 255);
+  color: #D4AF37;
   margin-bottom: 1rem;
 }
 
 .highlight-1 {
-  color: #38a169;
+  color: #FFFFFF;
 }
 
 .description-1 {
   font-size: 1rem;
-  color: #d7dbd1;
+  color: #E0E0E0;
   margin-bottom: 1rem;
 }
 
@@ -77,24 +79,24 @@ body {
   display: flex;
   align-items: center;
   font-size: 1rem;
-  color: #d8dbd1;
+  color: #E0E0E0;
 }
 
 .detail-title-1 {
   font-weight: bold;
-  color: #328330;
+  color: #D4AF37;
   margin-right: 0.5rem;
 }
 
 .icon-1 {
   margin-right: 0.5rem;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 /* עיצוב מותאם למובייל עם צבעים מעודכנים */
 @media (max-width: 768px) {
   body {
-    background-color: #0f172a;
+    background-color: #000000;
   }
 
   .container-1 {
@@ -110,8 +112,8 @@ body {
     margin-top: 55%;
     width: 100%;
     padding: 1rem;
-    background-color: #1e293b;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: #333333;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
   }
 
@@ -123,7 +125,7 @@ body {
     margin-top: 10%;
     right: 0;
     transform: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
     border-radius: 50%;
     overflow: hidden;
   }
@@ -136,7 +138,7 @@ body {
   .text-container-1 {
     width: 100%;
     text-align: center;
-    color: #e2e8f0;
+    color: #E0E0E0;
   }
 
   .title-1 {
@@ -148,7 +150,7 @@ body {
     font-size: 0.9rem;
     margin-bottom: 1rem;
     text-align: left;
-    color: #cbd5e1;
+    color: #E0E0E0;
   }
 
   .details-1 {
@@ -160,11 +162,12 @@ body {
   .detail-item-1 {
     justify-content: flex-start;
     font-size: 0.9rem;
-    color: #e2e8f0;
+    color: #E0E0E0;
   }
 
   .icon-1 {
     margin-right: 0.5rem;
     font-size: 1.2rem;
+    color: #D4AF37;
   }
 }
