@@ -25,7 +25,7 @@ function Contact() {
   };
 
   return (
-    <section id="contact" className="py-10 bg-gray-900">
+    <section id="contact">
       <div className="contact-section">
         <h1 className="contact-title">Get <span className="highlight">in touch</span></h1>
         <div className="map-container">

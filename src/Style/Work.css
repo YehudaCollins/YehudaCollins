@@ -1,28 +1,35 @@
 /* General Styles */
+
+body {
+  background-color: #000000;
+  font-family: 'Roboto', sans-serif;
+  color: #E0E0E0;
+}
 .work-section {
   background: linear-gradient(rgba(0, 0, 0, 0.532), rgba(0, 0, 0, 0.402)), 
   url('https://images.pexels.com/photos/807598/pexels-photo-807598.jpeg') no-repeat center center fixed;
   background-size: cover;
   padding: 5rem 0;
-  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 
 .work-title {
-  font-size: 3.5rem;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
   font-weight: bold;
-  text-align: center;
-  color: #d4af37;
+  color: #D4AF37;
   margin-bottom: 3rem;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
-
 .work-container {
-  max-width: 70rem;
-  margin: 0 auto;
+  width: 90%;
+  max-width: 1200px;
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
 }
 
@@ -32,30 +39,29 @@
   }
 }
 
-/* Project Card Styles */
 .project-card {
-  background-color: #545758;
-  padding: 1.5rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.8);
+  height:100%;
+  background-color: #333333;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
   transition: transform 0.3s ease;
 }
 
 .project-card:hover {
-  transform: scale(1.05);
+  transform: translateY(-10px);
+}
+
+
+.image-carousel {
+  position: relative;
+  height: 320px; /* מגדיל את גובה הקרוסלה */
 }
 
 .project-image {
   width: 100%;
-  height: 16rem;
-  object-fit: cover;
-  border-radius: 0.5rem;
-  margin-bottom: 1rem;
-}
-
-/* Carousel Button Styles */
-.image-carousel {
-  position: relative;
+  height: 100%;
+  object-fit: cover; /* תוודא שהתמונה מכסה את כל השטח שניתן */
 }
 
 .carousel-button {
@@ -72,30 +78,37 @@
   z-index: 2;
 }
 
-.prev-button { left: 10px; }
-.next-button { right: 10px; }
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+
+.project-content {
+  padding: 1.5rem;
+}
 
 .carousel-button:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Project Info Styles */
-.project-content {
-  padding: 1.5rem;
-}
 
 .project-title {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #d4af37;
-  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  color: #D4AF37;
+  margin-bottom: 1rem;
+  margin-left: 2%;
 }
 
 .project-description {
   font-size: 1rem;
-  color: #c5c5c5;
   margin-bottom: 1rem;
-  line-height: 1.6;
+  margin-left: 2%;
+  width: 80%;
+  height: 10%;
 }
 
 .project-technologies {
@@ -103,17 +116,15 @@
   flex-wrap: wrap;
   gap: 0.5rem;
   margin-bottom: 1.5rem;
+  margin-left: 2%;
 }
-
-
 
 .project-technology {
   background-color: rgba(255, 255, 255, 0.1);
-  color: #d4af37;
+  color: #D4AF37;
   padding: 0.3rem 0.8rem;
   border-radius: 20px;
   font-size: 0.8rem;
-  transition: background-color 0.3s ease;
 }
 
 .project-technology:hover {
@@ -121,96 +132,82 @@
 }
 
 
+
 .project-buttons {
   display: flex;
   gap: 1rem;
+  margin-left: 2%;
+  margin-bottom: 5%;
 }
 
 .project-button {
   display: flex;
   align-items: center;
   padding: 0.5rem 1rem;
-  border-radius: 3rem;
+  border-radius: 5px;
   font-size: 1rem;
   font-weight: bold;
-  color: #ffffff;
   text-decoration: none;
   transition: background-color 0.3s ease;
 }
-
-.project-button .button-icon {
-  margin-right: 0.5rem;
-}
-
 .project-button-view {
-  background-color: #3b82f6;
+  background-color: #D4AF37;
+  color: #000000;
 }
 
 .project-button-view:hover {
-  background-color: #2563eb;
+  background-color: #B08F26;
 }
 
 .project-button-enter {
-  background-color: #10b981;
-}
-
-.project-button-enter:hover {
-  background-color: #059669;
+  border: 2px solid #D4AF37;
+  color: #D4AF37;
 }
 
 /* Mobile Styles */
 @media (max-width: 768px) {
   .work-title {
-    font-size: 2rem; /* Mobile title size */
-    margin-bottom: 1rem;
+    font-size: 2rem;
+    margin-bottom: 2rem;
   }
 
   .work-container {
-    grid-template-columns: 1fr; /* Single column on mobile */
-    gap: 1rem;
-    padding: 0 1rem;
+    grid-template-columns: 1fr;
   }
 
   .project-card {
-    padding: 1rem; /* Reduced padding for mobile */
-    margin: 0 0.5rem;
+    max-width: 100%;
   }
 
-  .project-image {
-    height: 12rem; /* Reduced image height for mobile */
-    margin-bottom: 0.5rem;
+  .image-carousel {
+    height: 200px; /* הגדרת גובה שונה למובייל */
   }
-
   .carousel-button {
-    font-size: 1.25rem; /* Smaller buttons on mobile */
-    padding: 0.4rem;
+    font-size: 1.2rem;
+    padding: 0.3rem;
+  }
+
+  .project-content {
+    padding: 1rem;
   }
 
   .project-title {
-    font-size: 1.25rem; /* Smaller title size for mobile */
-    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
   }
 
+
   .project-description {
-    font-size: 0.875rem; /* Smaller description size for mobile */
-    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    height: 15%;
   }
 
   .project-technology {
-    font-size: 0.75rem; /* Smaller tech tag size for mobile */
-    padding: 0.2rem 0.5rem;
-  }
-
-  .project-buttons {
-    gap: 0.5rem; /* Reduced button gap for mobile */
+    font-size: 0.7rem;
   }
 
   .project-button {
-    font-size: 0.875rem; /* Smaller button size for mobile */
-    padding: 0.4rem 0.75rem;
-  }
-
-  .project-button .button-icon {
-    margin-right: 0.4rem;
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+    margin-bottom: 5%;
   }
 }

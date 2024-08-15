@@ -1,48 +1,74 @@
+
+
 /* עיצוב כללי */
 .contact-section {
-  background-color: #1a202c;
-  color: #d1d5db;
-  padding: 2rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+  padding: 3rem;
+  border-radius: 15px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
   width: 90%;
-  margin: 2rem auto;
+  max-width: 1200px;
+  margin: 3rem auto;
+  font-family: 'Roboto', sans-serif;
 }
 
 .contact-content {
-  gap: 5vh;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  gap: 4rem;
 }
 
 .contact-text {
   flex: 1;
-  margin-right: 2rem;
 }
 
 .contact-title {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
   margin-bottom: 1.5rem;
   color: #ffffff;
+  font-family: 'Playfair Display', serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .highlight {
-  color: #38a169;
+  color: #D4AF37;
+  position: relative;
 }
+
+.highlight::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #D4AF37;
+  transform: scaleX(1);
+}
+
 
 .contact-description {
-  font-size: 1rem;
-  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
 }
 
+.pppp {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+
 .contact-details {
-  flex: 0 0 35%;
-  background-color: #2d3748;
-  padding: 1.5rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  background-color: #2a2a2a;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
 }
 
 .contact-item {
@@ -53,82 +79,101 @@
   margin-bottom: 1rem;
 }
 
-.contact-item span {
-  display: inline-block;
+
+.contact-item:hover {
+  transform: translateX(10px);
 }
 
 .contact-icon {
-  color: #38a169;
+  color: #D4AF37;
+  font-size: 1.5rem;
 }
+
 
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-
+  gap: 1.5rem;
 }
+
 
 .form-input, .form-textarea {
   width: 100%;
-  padding: 0.75rem;
-  border-radius: 0.5rem;
-  border: 1px solid #2d3748;
-  background-color: #2d3748;
-  color: #d1d5db;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background-color: #2a2a2a;
+  color: #e0e0e0;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
 
+.form-input:focus, .form-textarea:focus {
+  border-color: #D4AF37;
+  box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
 }
 
 .form-textarea {
-  resize: none;
-  height: 150px;
+  resize: vertical;
+  min-height: 150px;
 }
-
 .send-button {
-  padding: 0.75rem 1.5rem;
+  padding: 1rem 2rem;
   border: none;
-  border-radius: 0.5rem;
-  background-color: #38a169;
-  color: #ffffff;
-  font-size: 1rem;
+  border-radius: 8px;
+  background-color: #D4AF37;
+  color: #1a1a1a;
+  font-size: 1.1rem;
+  font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s;
-
+  transition: all 0.3s ease;
 }
 
 .send-button:hover {
-  background-color: #2f855a;
+  background-color: #b8860b;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
 }
 
-.pppp{
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-}
 
 .map-container {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .map-image {
   width: 100%;
-  border-radius: 0.5rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.map-image:hover {
+  transform: scale(1.02);
 }
 
 /* התאמות למובייל */
 @media (max-width: 768px) {
   .contact-section {
     width: 95%;
-    padding: 1rem;
+    padding: 2rem;
+    align-items: center;
+
   }
 
   .contact-content {
     flex-direction: column;
     gap: 2rem;
+
+  }
+
+
+  .pppp {
+    width: 100%;
   }
 
   .contact-text {
-    margin-right: 0;
+    margin-top: -20%;
+
   }
 
   .contact-details {
@@ -142,16 +187,27 @@
   }
 
   .contact-title {
-    font-size: 1.75rem;
+    font-size: 2.5rem;
     text-align: center;
   }
 
   .contact-description {
-    font-size: 0.875rem;
     text-align: center;
   }
 
   .contact-form {
-    width: 130%;
+    width: 145%;
+  }
+
+  .send-button {
+    align-self: center;
+    width: 100%;
+    margin-bottom: 15%;
+  }
+
+  .map-image {
+    height: 15vh;
+    width: 100%;
+
   }
 }

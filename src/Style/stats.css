@@ -1,31 +1,44 @@
+/* Global styles */
+body {
+  background-color: #000000;
+  color: #E0E0E0;
+  font-family: 'Roboto', sans-serif;
+}
+
 .stats-section {
-  background-color: #485c40 !important; /* Light Green with high priority */
+  background-color: #333333;
   padding: 40px 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 10px 20px rgba(212, 175, 55, 0.2);
 }
 
 .stats-section h2 {
+  font-family: 'Playfair Display', serif;
   font-size: 2.5rem;
   font-weight: bold;
-  color: #fdfffb; /* Green */
-}
+  color: #D4AF37;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 3%;
 
+}
 .stats-section h2 span {
-  color: rgb(153, 173, 91);
+  color: #FFFFFF;
 }
 
 .stat-card {
-  background-color: #333;
+  width: 20vw;
+  background-color: #222222;
   padding: 20px;
   border-radius: 10px;
-  width: 20vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
   transition: transform 0.3s ease;
+  align-items: center;
 }
 
 .stat-card:hover {
@@ -33,7 +46,7 @@
 }
 
 .stat-card h3 {
-  color: #e2e4de; /* Green */
+  color: #D4AF37;
   margin-bottom: 10px;
   display: flex;
   flex-direction: column;
@@ -41,35 +54,61 @@
   font-size: 1.25rem;
 }
 
+
 .stat-card h3 i {
-  color: #5c8826; /* Green */
+  color: #FFFFFF;
   margin-bottom: 8px;
-  font-size: 2rem; /* Larger icon size */
+  font-size: 2rem;
 }
 
 .stat-card p {
   font-size: 2rem;
-  color: white;
+  color: #E0E0E0;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 /* עיצוב מותאם למובייל */
 @media (max-width: 768px) {
-  .grid {
-    grid-template-columns: repeat(2, 1fr); /* שני כרטיסים בכל שורה */
-    gap: 1rem; /* רווח בין הכרטיסים */
+  .stats-section {
+    padding: 20px 0;
   }
 
+  .stats-section h2 {
+    font-size: 2rem;
+    margin-bottom: 5%;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    width: 90%;
+  }
+
+
   .stat-card {
-    width: 40vw; /* התאמת הרוחב של הכרטיסים ל-40% מרוחב המסך */
-    padding: 15px; /* הקטנת הפדינג לכרטיסים */
-    margin: 0 auto; /* מרווח בצדדים */
+    width: 40vw;
   }
 
   .stat-card h3 {
-    font-size: 1.5rem; /* התאמת גודל הכותרת */
+    font-size: 1rem;
+  }
+
+  .stat-card h3 i {
+    font-size: 1.5rem;
   }
 
   .stat-card p {
-    font-size: 1.75rem; /* התאמת גודל המספרים */
+    font-size: 1.5rem;
   }
 }
