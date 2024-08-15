@@ -1,6 +1,6 @@
 .skill-card {
   perspective: 1000px;
-  height: 200px;
+  height: 220px;
   margin: 10px 0;
 }
 
@@ -11,9 +11,11 @@
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
 }
 
-.skill-card.flipped .skill-card-inner {
+.skill-card:hover .skill-card-inner {
   transform: rotateY(180deg);
 }
 
@@ -23,51 +25,70 @@
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  border-radius: 0.5rem;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
 .skill-card-front {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  color: white;
 }
 
 .skill-card-back {
-  background-color: #2d3748;
+  background-color: #1a1a1a;
   transform: rotateY(180deg);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  color: white;
 }
 
-/* עיצוב מותאם למובייל */
+.text-gold {
+  color: #D4AF37;
+}
+
+.animate-bounce {
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+/* Responsive design */
 @media (max-width: 768px) {
   .skill-card {
-    height: 150px; /* הקטנת הגובה למובייל */
-    margin: 5px; /* רווח קטן בין הכרטיסים */
+    height: 180px;
   }
 
-  .skill-card-inner {
-    transition: transform 0.6s;
+  .skill-card-front svg,
+  .skill-card-back svg {
+    font-size: 3rem;
   }
 
   .skill-card-front h3,
   .skill-card-back h3 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 
-  .skill-card-front p,
   .skill-card-back p {
-    font-size: 0.875rem;
+    font-size: 0.9rem;
   }
 
   .grid-cols-2 {
-    grid-template-columns: repeat(2, 1fr); /* שני כרטיסים בשורה אחת */
-    gap: 10px; /* רווח בין הכרטיסים */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
   }
 
-  .max-w-4xl {
+  .max-w-6xl {
     max-width: 100%;
-    padding: 0 10px; /* ריווח פנימי */
+    padding: 0 15px;
   }
 }

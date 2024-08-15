@@ -6,50 +6,49 @@ function Work() {
   const projects = [
     {
       title: 'Jerusalem Real Estate',
-      description: 'A real estate site for buying houses',
-      images: ['n3.png', 'n2.png', 'n1.png', 'n4.png'], // Multiple images
+      description: 'A premium real estate platform for buying houses in Jerusalem',
+      images: ['n3.png', 'n2.png', 'n1.png', 'n4.png'],
       link: '',
       link2: 'https://jerusalemrealestate.us/',
-      technologies: ['JavaScript', 'emailjs', 'CSS', 'React', 'Node.js', 'PostgreSQL', 'API', 'Google Maps']
+      technologies: ['JavaScript', 'EmailJS', 'React', 'Node.js', 'PostgreSQL', 'Google Maps API']
     },
     {
       title: 'Briniac',
-      description: 'A learning website for children, which combines learning with games. Highly recommended for children',
-      images: [ 'b1.png','b3.png','briniac.png', 'b2.png','b4.png'], // Multiple images
+      description: 'An innovative learning website for children, combining education with interactive games',
+      images: ['b1.png', 'b3.png', 'briniac.png', 'b2.png', 'b4.png'],
       link: 'https://github.com/YehudaCollins/Braniac-main',
       link2: 'https://brniac.netlify.app/',
-      technologies: ['JavaScript', 'CSS', 'React', 'Node.js', 'Firebase', 'Unity', 'C#']
+      technologies: ['React', 'Firebase', 'Unity', 'C#']
     },
     {
       title: 'CinaWave',
-      description: 'A site for information about every movie and series.',
+      description: 'A comprehensive database for movie and series information',
       images: ['c1.png', 'c2.png', 'c3.png', 'c4.png'],
       link: 'https://github.com/YehudaCollins/cinawave',
       link2: 'https://cinawave.com/',
-      technologies: ['JavaScript', 'HTML', 'CSS', 'React', 'Node.js', 'PostgreSQL', 'API', 'tmdb']
+      technologies: ['React', 'Node.js', 'PostgreSQL', 'TMDB API']
     },
     {
       title: 'Zombieland',
-      description: 'A maze-style horror game, in an old abandoned house.',
-      images: ['z1.png', 'z2.png', 'z3.png', 'z4.png'], // Multiple images
+      description: 'An immersive maze-style horror game set in an abandoned house',
+      images: ['z1.png', 'z2.png', 'z3.png', 'z4.png'],
       link: '#',
       link2: 'https://yehudacollins.github.io/Zombieland.com/#',
-      technologies: ['JavaScript', 'HTML', 'CSS', 'React', 'Node.js', 'PostgreSQL', 'Unity', 'C#']
+      technologies: ['Unity', 'C#', 'JavaScript', 'React']
     },
     {
       title: 'Gourmet-Galaxy',
-      description: 'Shop site. which allows you to add stores and get details and prices for each store.',
-      images: ['gourmet-galaxy.png', 'r2.png', 'r3.png'], // Multiple images
+      description: 'An advanced e-commerce platform allowing multiple stores and detailed product listings',
+      images: ['gourmet-galaxy.png', 'r2.png', 'r3.png'],
       link: 'https://github.com/YehudaCollins/GourmetGalaxy',
       link2: 'https://gourmet-galaxy.netlify.app/',
-      technologies: ['JavaScript', 'HTML', 'CSS', 'React', 'Node.js', 'MongoDB']
+      technologies: ['React', 'Node.js', 'MongoDB']
     }
-
   ];
 
   return (
     <section id="work" className="work-section">
-      <h2 className="work-title">My Projects</h2>
+      <h2 className="work-title">My Portfolio</h2>
       <div className="work-container">
         {projects.map((project, index) => (
           <ProjectCard key={index} project={project} />
@@ -61,6 +60,7 @@ function Work() {
 
 function ProjectCard({ project }) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [isHovered, setIsHovered] = useState(false);
 
   const nextImage = () => {
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % project.images.length);
@@ -73,7 +73,11 @@ function ProjectCard({ project }) {
   };
 
   return (
-    <div className="project-card">
+    <div 
+      className={`project-card ${isHovered ? 'hovered' : ''}`}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
       <div className="image-carousel">
         <button onClick={prevImage} className="carousel-button prev-button">
           <FaArrowLeft />
@@ -95,12 +99,14 @@ function ProjectCard({ project }) {
         ))}
       </div>
       <div className="project-buttons">
-        <a href={project.link} className="project-button project-button-view" target="_blank" rel="noopener noreferrer">
-          <FaGithub className="button-icon" /> View Project
-        </a>
+        {project.link && (
+          <a href={project.link} className="project-button project-button-view" target="_blank" rel="noopener noreferrer">
+            <FaGithub className="button-icon" /> View Code
+          </a>
+        )}
         {project.link2 && (
           <a href={project.link2} className="project-button project-button-enter" target="_blank" rel="noopener noreferrer">
-            <FaExternalLinkAlt className="button-icon" /> Enter the Site
+            <FaExternalLinkAlt className="button-icon" /> Live Demo
           </a>
         )}
       </div>
