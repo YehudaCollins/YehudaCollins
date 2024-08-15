@@ -184,23 +184,27 @@ p {
     justify-content: flex-start;
   }
 }
-/* עיצוב מותאם למובייל */
+
+/* עיצוב מותאם למובייל עם צבעים מעודכנים */
 @media (max-width: 768px) {
+  body {
+    background-color: #0f172a;
+  }
+
   .profile-name {
-    position: static; /* מסיר את המיקום האבסולוטי כדי שהשם יופיע במקום הנכון */
-    font-size: 2rem; /* מגדיל את הפונט כדי שהשם יהיה ברור ונראה */
+    position: static;
+    font-size: 2rem;
     margin-top: 10px;
-    text-align: center; /* ממקם את השם במרכז */
+    text-align: center;
     font-weight: bold;
-    color: #ffffff;
-    margin-bottom: 10px; /* מוסיף רווח מתחת לשם */
+    color: #f8fafc;
+    margin-bottom: 10px;
   }
 
   .profile-name span {
-    color: #a0aec0; /* צבע שונה למילה Collins */
+    color: #22c55e;
   }
 
-  /* שאר הקוד */
   .profile-card {
     display: flex;
     flex-direction: column;
@@ -208,7 +212,7 @@ p {
     width: 100%;
     max-width: 350px;
     margin: 0 auto;
-    background-color: #10333d;
+    background-color: #1e293b;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     margin-top: 70%;
@@ -232,7 +236,9 @@ p {
 
   .text-container {
     text-align: center;
-    color: #d1d5db;
+    color: #e2e8f0;
+    background-color: #334155;
+
   }
 
   .icons-container {
@@ -243,13 +249,14 @@ p {
   }
 
   .icon-link {
-    color: #a0aec0;
+    color: #94a3b8;
     font-size: 1.5rem;
   }
 
   .profile-description {
     font-size: 0.875rem;
     margin-bottom: 15px;
+    color: #cbd5e1;
   }
 
   .button-container {
@@ -267,12 +274,12 @@ p {
   }
 
   .resume-button {
-    background-color: #38a169;
+    background-color: #22c55e;
     color: #ffffff;
   }
 
   .contact-button {
-    border: 1px solid #4a5568;
+    border: 1px solid #64748b;
     color: #ffffff;
     background-color: transparent;
   }

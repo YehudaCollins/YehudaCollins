@@ -1,3 +1,4 @@
+/* General Styles */
 .work-section {
   background: url('https://images.pexels.com/photos/807598/pexels-photo-807598.jpeg') no-repeat center center fixed;
   background-size: cover;
@@ -5,7 +6,7 @@
 }
 
 .work-title {
-  font-size: 3.5rem; /* שמירת גודל הכותרת במחשב */
+  font-size: 3.5rem; /* Desktop title size */
   font-weight: bold;
   text-align: center;
   color: #c5e4c1;
@@ -22,10 +23,11 @@
 
 @media (min-width: 768px) {
   .work-container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* Two columns on desktop */
   }
 }
 
+/* Project Card Styles */
 .project-card {
   background-color: #3b4735;
   padding: 1.5rem;
@@ -46,6 +48,38 @@
   margin-bottom: 1rem;
 }
 
+/* Carousel Button Styles */
+.image-carousel {
+  position: relative;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: #ffffff;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+
+.carousel-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Project Info Styles */
 .project-title {
   font-size: 1.5rem;
   font-weight: bold;
@@ -74,6 +108,7 @@
   color: #ffffff;
 }
 
+/* Button Styles */
 .project-buttons {
   display: flex;
   gap: 1rem;
@@ -111,50 +146,55 @@
   background-color: #059669;
 }
 
-/* עיצוב מותאם למובייל */
+/* Mobile Styles */
 @media (max-width: 768px) {
   .work-title {
-    font-size: 2rem; /* שמירה על גודל הכותרת במובייל */
+    font-size: 2rem; /* Mobile title size */
     margin-bottom: 1rem;
   }
 
   .work-container {
-    grid-template-columns: 1fr; /* כרטיס אחד בכל שורה */
-    gap: 1rem; /* הפחתת המרווח בין הכרטיסות */
-    padding: 0 1rem; /* רווח בצדדים */
+    grid-template-columns: 1fr; /* Single column on mobile */
+    gap: 1rem;
+    padding: 0 1rem;
   }
 
   .project-card {
-    padding: 1rem; /* הקטנת מרווח הכרטיס */
-    margin: 0 0.5rem; /* רווח בצדדים */
+    padding: 1rem; /* Reduced padding for mobile */
+    margin: 0 0.5rem;
   }
 
   .project-image {
-    height: 12rem; /* הקטנת גובה התמונה */
+    height: 12rem; /* Reduced image height for mobile */
     margin-bottom: 0.5rem;
   }
 
+  .carousel-button {
+    font-size: 1.25rem; /* Smaller buttons on mobile */
+    padding: 0.4rem;
+  }
+
   .project-title {
-    font-size: 1.25rem; /* הקטנת גודל הכותרת בכרטיס */
+    font-size: 1.25rem; /* Smaller title size for mobile */
     margin-bottom: 0.5rem;
   }
 
   .project-description {
-    font-size: 0.875rem; /* הקטנת גודל הטקסט */
+    font-size: 0.875rem; /* Smaller description size for mobile */
     margin-bottom: 0.5rem;
   }
 
   .project-technology {
-    font-size: 0.75rem; /* הקטנת גודל הטכנולוגיות */
+    font-size: 0.75rem; /* Smaller tech tag size for mobile */
     padding: 0.2rem 0.5rem;
   }
 
   .project-buttons {
-    gap: 0.5rem; /* הפחתת המרווח בין הכפתורים */
+    gap: 0.5rem; /* Reduced button gap for mobile */
   }
 
   .project-button {
-    font-size: 0.875rem; /* הקטנת גודל הכפתורים */
+    font-size: 0.875rem; /* Smaller button size for mobile */
     padding: 0.4rem 0.75rem;
   }
 
