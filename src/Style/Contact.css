@@ -150,40 +150,36 @@
 .map-image:hover {
   transform: scale(1.02);
 }
-
 /* התאמות למובייל */
 @media (max-width: 768px) {
-  .contact-section {
-    width: 95%;
-    padding: 2rem;
-    align-items: center;
 
+  .contact-section {
+    width: 100%;
+    align-items: center;
+    margin-top: 0;
+    border-radius: 0;
+    margin-bottom: 0;
   }
 
   .contact-content {
     flex-direction: column;
     gap: 2rem;
-
+    align-items: center; /* ממרכז את התוכן */
   }
-
 
   .pppp {
     width: 100%;
   }
 
   .contact-text {
-    margin-top: -20%;
-
+    margin-top: -20%; /* מסיר את הריווח למעלה */
+    width: 100%; /* מוודא שהתוכן יתפוס את כל הרוחב */
   }
 
   .contact-details {
     width: 100%;
     margin-bottom: 1rem;
     padding: 1rem;
-  }
-
-  .pppp {
-    width: 100%;
   }
 
   .contact-title {
@@ -196,18 +192,26 @@
   }
 
   .contact-form {
-    width: 145%;
+    width: 90%; /* התאמת רוחב לטלפון כדי שיהיה רחב יותר */
+    margin: 0 auto; /* מרכז את הטופס */
+  }
+
+  .form-input, .form-textarea {
+    width: 100%; /* התאמת רוחב לטלפון */
+    padding: 1rem; /* שמירת גובה האינפוטים */
+    font-size: 1rem; /* גודל טקסט נורמלי */
   }
 
   .send-button {
     align-self: center;
-    width: 100%;
+    width: 100%; /* התאמת רוחב לטלפון */
     margin-bottom: 15%;
+    padding: 1rem 2rem; /* שמירת גובה הכפתור */
+    font-size: 1.1rem; /* שמירת גודל הטקסט בכפתור */
   }
 
   .map-image {
-    height: 15vh;
+    height: 20vh; /* מגדיל מעט את גובה המפה */
     width: 100%;
-
   }
 }
