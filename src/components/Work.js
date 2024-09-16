@@ -52,7 +52,7 @@ function Work() {
       technologies: ['Unity', 'C#', 'JavaScript', 'React']
     }
   ];
-
+   
   return (
     <section id="work" className="work-section">
       <h2 className="work-title">My Portfolio</h2>
