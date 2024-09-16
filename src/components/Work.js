@@ -17,8 +17,15 @@ function Work() {
       description: 'An innovative learning website for children, combining education with interactive games',
       images: ['b1.png', 'b3.png', 'briniac.png', 'b2.png', 'b4.png'],
       link: 'https://github.com/YehudaCollins/Braniac-main',
-      link2: 'https://brniac.netlify.app/',
+      link2: 'https://braniac-f455c.web.app/',
       technologies: ['React', 'Firebase', 'Unity', 'C#']
+    },
+    {
+      title: 'KosherMind',
+      description: 'Flight site. which is in the market',
+      images: ['f1.png', 'f2.png', 'f3.png', 'f4.png', 'f5.png'],
+      link2: 'https://pleasuairlines.com/',
+      technologies: ['React', 'Node.js', 'Firebase','api','qr','Typescript','express']
     },
     {
       title: 'CinaWave',
@@ -29,20 +36,20 @@ function Work() {
       technologies: ['React', 'Node.js', 'PostgreSQL', 'TMDB API']
     },
     {
+      title: 'KosherMind',
+      description: 'ai project - adapted to the religious community',
+      images: ['g2.png', 'g5.png', 'g3.png'],
+      link: 'https://github.com/YehudaCollins/GourmetGalaxy',
+      link2: 'https://gourmet-galaxy.netlify.app/',
+      technologies: ['React', 'Node.js', 'Firebase','api-gpt']
+    },
+    {
       title: 'Zombieland',
       description: 'An immersive maze-style horror game set in an abandoned house',
       images: ['z1.png', 'z2.png', 'z3.png', 'z4.png'],
       link: '#',
       link2: 'https://yehudacollins.github.io/Zombieland.com/#',
       technologies: ['Unity', 'C#', 'JavaScript', 'React']
-    },
-    {
-      title: 'Gourmet-Galaxy',
-      description: 'An advanced e-commerce platform allowing multiple stores and detailed product listings',
-      images: ['gourmet-galaxy.png', 'r2.png', 'r3.png'],
-      link: 'https://github.com/YehudaCollins/GourmetGalaxy',
-      link2: 'https://gourmet-galaxy.netlify.app/',
-      technologies: ['React', 'Node.js', 'MongoDB']
     }
   ];
 
