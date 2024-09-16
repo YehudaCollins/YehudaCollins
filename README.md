@@ -1,6 +1,9 @@
-
+export default function Component() {
+  return (
+    <div className="markdown-body">
+      {`
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=יהודה%20קולינס%20|%20Yehuda%20Collins&fontSize=50&fontAlignY=35&desc=Full%20Stack%20Developer%20|%20מפתח%20פול%20סטאק&descAlignY=50&animation=twinkling" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:3498db,100:2980b9&height=200&section=header&text=יהודה%20קולינס%20|%20Yehuda%20Collins&fontSize=50&fontAlignY=35&desc=Full%20Stack%20Developer%20|%20מפתח%20פול%20סטאק&descAlignY=50&animation=twinkling" width="100%" />
 
   <p align="center">
     <a href="http://yehudacollins.com"><img src="https://img.shields.io/badge/Website-yehudacollins.com-3498db?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Website" /></a>
@@ -88,7 +91,7 @@
     <tr>
       <td width="50%">
         <h3 align="center">Airline Management System</h3>
-        <img src="https://via.placeholder.com/500x300.png?text=Airline+Management+System" alt="Airline Project" width="100%" />
+        <img src="/placeholder.svg?height=300&width=500" alt="Airline Management System" width="100%" />
         <p align="center">
           Revolutionizing air travel with a state-of-the-art management system. Features include real-time flight tracking, automated check-in processes, and AI-driven customer service.
         </p>
@@ -100,7 +103,7 @@
       </td>
       <td width="50%">
         <h3 align="center">Interactive Portfolio</h3>
-        <img src="https://via.placeholder.com/500x300.png?text=Interactive+Portfolio" alt="Portfolio Website" width="100%" />
+        <img src="/placeholder.svg?height=300&width=500" alt="Interactive Portfolio" width="100%" />
         <p align="center">
           A dynamic, responsive portfolio showcasing my journey as a developer. Featuring interactive UI elements, 3D animations, and a unique user experience.
         </p>
@@ -114,7 +117,7 @@
     <tr>
       <td width="50%">
         <h3 align="center">AI-Powered Task Manager</h3>
-        <img src="https://via.placeholder.com/500x300.png?text=AI+Task+Manager" alt="AI Task Manager" width="100%" />
+        <img src="/placeholder.svg?height=300&width=500" alt="AI Task Manager" width="100%" />
         <p align="center">
           Leveraging machine learning to optimize personal and team productivity. Features smart task prioritization, workload balancing, and predictive analytics.
         </p>
@@ -126,7 +129,7 @@
       </td>
       <td width="50%">
         <h3 align="center">Eco-Friendly Smart Home System</h3>
-        <img src="https://via.placeholder.com/500x300.png?text=Smart+Home+System" alt="Smart Home System" width="100%" />
+        <img src="/placeholder.svg?height=300&width=500" alt="Smart Home System" width="100%" />
         <p align="center">
           An IoT-based solution for sustainable living. Integrates energy management, waste reduction, and automated eco-friendly practices into daily home life.
         </p>
@@ -182,3 +185,7 @@
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer" alt="Wave Footer" />
 </div>
+      `}
+    </div>
+  );
+}
