@@ -1,5 +1,4 @@
-export default function Component() {
-  return (
+
     <div className="markdown-body">
       {`
 <details>
@@ -63,5 +62,3 @@ export default function Component() {
 </details>
       `}
     </div>
-  );
-}
