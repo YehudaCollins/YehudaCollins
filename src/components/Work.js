@@ -42,7 +42,7 @@ function Work() {
       link: 'https://github.com/YehudaCollins/GourmetGalaxy',
       link2: 'https://gourmet-galaxy.netlify.app/',
       technologies: ['React', 'Node.js', 'Firebase','api-gpt']
-    },
+    }, 
     {
       title: 'Zombieland',
       description: 'An immersive maze-style horror game set in an abandoned house',
