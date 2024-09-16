@@ -1,7 +1,4 @@
-export default function Component() {
-  return (
-    <div className="markdown-body">
-      {`
+
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=יהודה%20קולינס%20|%20Yehuda%20Collins&fontSize=50&fontAlignY=35&desc=Full%20Stack%20Developer%20|%20מפתח%20פול%20סטאק&descAlignY=50&animation=twinkling" width="100%" />
 
